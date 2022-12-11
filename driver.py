@@ -3,7 +3,8 @@ import model
 
 
 def add_tasks():
-    for u in range(10):
+    amount_tasks = int(input("Entrer le nombre de tâches à créer : "))
+    for u in range(amount_tasks):
         new = model.Task("Task " + str(u))
         temporary_list.append(new)
 
@@ -19,13 +20,16 @@ def get_current_time_temporary_list(current_time):
 if __name__ == '__main__':
     TaskPriorityQueue = model.PriorityQueue()
     OnHoldStack = model.Stack()
+
+    time_left = int(input("Entrer la durée de la simulation : "))
+    time_elapsed = 0
+
     temporary_list = []
     add_tasks()
     for t in temporary_list:
         print(str(t))
     current_task = None
-    time_left = 60
-    time_elapsed = 0
+
     while time_left > 0:
         for task in get_current_time_temporary_list(time_elapsed):
             TaskPriorityQueue.enqueue(task)
