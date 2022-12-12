@@ -77,7 +77,3 @@ if __name__ == '__main__':
         time_elapsed += 1
         time_left -= 1
     print("Process is terminated!")
-
-
-
-

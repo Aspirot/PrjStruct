@@ -11,6 +11,9 @@ class PriorityQueue:
     def first(self):
         return self.__task_heap.peek()
 
+    def tasks(self):
+        return self.__task_heap.tasks()
+
     def dequeue(self):
         if self.__task_heap.is_empty():
             raise ValueError("Queue is empty!")
