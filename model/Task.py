@@ -5,8 +5,8 @@ class Task:
     def __init__(self, name):
         self.name = name
         self.priority = random.randint(0, 10)
-        self.arriving_time = random.poisson(lam=10)
-        self.execution_time = int(random.exponential(scale=10)) + 1
+        self.arriving_time = random.poisson(lam=4)
+        self.execution_time = int(random.exponential(scale=3)) + 1
 
     def __repr__(self):
         return f"{{name: {self.name}, priority: {self.priority}, arriving_time: {self.arriving_time}, execution_time: "\
