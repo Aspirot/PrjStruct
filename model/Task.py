@@ -5,7 +5,7 @@ class Task:
     def __init__(self, name):
         self.name = name
         self.priority = random.randint(0, 10)
-        self.arriving_time = random.poisson(lam=4)
+        self.arriving_time = random.poisson(lam=5)
         self.execution_time = int(random.exponential(scale=3)) + 1
 
     def __repr__(self):

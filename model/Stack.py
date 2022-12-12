@@ -30,6 +30,12 @@ class Stack(object):
 
     top = peek
 
+    def tasks(self):
+        to_return = []
+        for i in range(self.__top + 1):
+            to_return.append(self.__items[i])
+        return to_return
+
     def is_empty(self):
         if self.__top == -1:
             return True
@@ -44,5 +50,5 @@ class Stack(object):
         for i in range(self.__top + 1):
             to_return = to_return + str(self.__items[i])
             if i < self.__top:
-                to_return=to_return + ","
+                to_return = to_return + ","
         return to_return + ']'
