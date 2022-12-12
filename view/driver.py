@@ -20,9 +20,9 @@ def get_current_time_temporary_list(current_time):
     return current_time_tasks
 
 
-# driver
+# Driver
 if __name__ == '__main__':
-    # Initialisation
+    # Variable Initialisation
     TaskPriorityQueue = model.PriorityQueue()
     OnHoldStack = model.Stack()
     total_time = int(input("Entrer la durée de la simulation : "))
@@ -35,7 +35,7 @@ if __name__ == '__main__':
         print(repr(t))
     current_task = None
 
-    # kpi variables initialisations
+    # KPI variables initialisations
     kpi_intervals = []
     kpi_current_interval = 0
     kpi_service_time = 0
