@@ -2,6 +2,8 @@ import time
 import model
 
 
+# Fait par Denis Aspirot et William Guilbault
+
 # Method to add tasks
 def add_tasks(amount, time_to_add, exponential_scale):
     poisson_lam = 0

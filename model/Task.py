@@ -1,6 +1,8 @@
 from numpy import random
 
 
+# Fait par Denis Aspirot et William Guilbault
+
 class Task:
     def __init__(self, name, poisson_lam, exponential_scale):
         self.name = name
